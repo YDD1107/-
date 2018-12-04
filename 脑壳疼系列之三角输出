@@ -1,0 +1,40 @@
+
+int main()
+{   
+    //三角形的输出数字或者字母    第一个for输出字母，，第二个for输出数字
+    const int ROWS=6;///           定义了两个常量，6行6列
+    const int CHARS=6;///
+    int i;///行
+    char j;///列
+    for(i=0;i<ROWS;i++)///        当i<6，循环6次，0 1 2 3 4 5.  外层循环6行
+    {
+        for(j=('A'+i);j<('A'+CHARS);j++)///1<7
+        printf("%c",j);
+        printf("\n");
+    }
+
+
+
+    //输出三角形的数字
+    int i,j;
+    for(i=0;i<11;i++)
+    {   printf("\n");
+        for(j=0;j<1+i;j++)
+        {
+            printf("%d",j);
+
+        }
+    }
+    printf("\n");
+    for(i=0;i<11;i++)
+    {   printf("\n");
+        for(j=0;j<11-i;j++)
+        {
+            printf("%d",j);
+
+        }
+    }
+    
+  
+  
+}
