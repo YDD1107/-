@@ -1,0 +1,21 @@
+
+
+int main()
+{
+
+   //动态录入五位同学的成绩并且打印
+    int chengji[5];
+    int i;
+    for(i=0;i<5;i++)
+    {
+        printf("请输入第%d位同学的成绩：",i+1);
+        scanf("%d",&chengji[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        printf("第%d位同学的成绩是%d\n",i+1,chengji[i]);
+         
+    }
+       
+       
+}
