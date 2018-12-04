@@ -39,4 +39,46 @@ int main()
     }
     
     
+    
+    
+   
+   
+   
+    
+    ///第二种排序法
+    int i,j,flag,c;
+    int a[10];
+    printf("请输入10个数字：\n");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    for(i=0;i<9;i++)
+    {
+
+        flag=0;
+        for(j=10;j>i;j--)
+        {
+            if(a[j-1]>a[j])
+            {
+                c=a[j-1];
+                a[j-1]=a[j];
+                a[j]=c;
+                flag=1;
+            }
+        }
+        if(flag==0)
+        {
+            break;
+        }
+    }
+    printf("排序后的数字是\n");
+    for(i=0;i<10;i++)
+    {
+        printf("%d\t",a[i]);
+    }
+    
+   
+   
 }
